@@ -8,9 +8,7 @@
       </slot>
     </div>
     <div class="header-center">
-      <span class="prev-month" @click.stop="goPrev">{{leftArrow}}</span>
       <span class="title">{{title}}</span>
-      <span class="next-month" @click.stop="goNext">{{rightArrow}}</span>
     </div>
     <div class="header-right">
       <slot name="header-right">
