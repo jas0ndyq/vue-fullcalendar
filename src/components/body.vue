@@ -327,7 +327,7 @@
             .event-item{
               cursor: pointer;
               font-size:12px;
-              background-color:#C7E6FD;
+              background-color:#03a9f4;
               margin-bottom:2px;
               color: rgba(0,0,0,.87);
               padding:0 0 0 4px;
