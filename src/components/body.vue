@@ -47,7 +47,7 @@
         :style="{left: morePos.left + 'px', top: morePos.top + 'px'}">
         <div class="more-header">
           <span class="title">{{moreTitle(selectDay.date)}}</span>
-          <span class="close" @click.stop="showMore = false">x</span>
+          <span class="close" @click.stop="showMore = false">×</span>
         </div>
         <div class="more-body">
           <ul class="body-list">
@@ -327,9 +327,10 @@
             .event-item{
               cursor: pointer;
               font-size:12px;
-              background-color:#03a9f4;
+              font-weight: bold;
+              background-color:#fda924;
               margin-bottom:2px;
-              color: rgba(0,0,0,.87);
+              color: #fff;
               padding:0 0 0 4px;
               height: 18px;
               line-height: 18px;

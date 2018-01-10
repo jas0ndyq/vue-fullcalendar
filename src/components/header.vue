@@ -1,6 +1,8 @@
 <template>
   <div class="full-calendar-header">
     <div class="header-left">
+      <span @click.stop="goPrev">{{leftArrow}}</span>
+      <span @click.stop="goNext">{{rightArrow}}</span>
       <span @click="goDayInMonth()">今天</span>
       <slot name="header-left">
       </slot>
