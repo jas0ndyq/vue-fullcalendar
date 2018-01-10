@@ -1403,8 +1403,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	//
 	//
 	//
-	//
-	//
 
 /***/ }),
 /* 19 */
@@ -1438,24 +1436,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, [_vm._v("今天")]), _vm._v(" "), _vm._t("header-left")], 2), _vm._v(" "), _c('div', {
 	    staticClass: "header-center"
 	  }, [_c('span', {
-	    staticClass: "prev-month",
-	    on: {
-	      "click": function($event) {
-	        $event.stopPropagation();
-	        _vm.goPrev($event)
-	      }
-	    }
-	  }, [_vm._v(_vm._s(_vm.leftArrow))]), _vm._v(" "), _c('span', {
 	    staticClass: "title"
-	  }, [_vm._v(_vm._s(_vm.title))]), _vm._v(" "), _c('span', {
-	    staticClass: "next-month",
-	    on: {
-	      "click": function($event) {
-	        $event.stopPropagation();
-	        _vm.goNext($event)
-	      }
-	    }
-	  }, [_vm._v(_vm._s(_vm.rightArrow))])]), _vm._v(" "), _c('div', {
+	  }, [_vm._v(_vm._s(_vm.title))])]), _vm._v(" "), _c('div', {
 	    staticClass: "header-right"
 	  }, [_vm._t("header-right")], 2)])
 	},staticRenderFns: []}
