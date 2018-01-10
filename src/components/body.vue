@@ -35,7 +35,7 @@
               </p>
               <p v-if="day.events.length > eventLimit"
                 class="more-link" @click.stop="selectThisDay(day, $event)">
-                更多
+                +更多
               </p>
             </div>
           </div>
@@ -376,6 +376,7 @@
         font-size: 14px;
         .title{
           flex:1;
+          font-size: 22px;
         }
         .close{
           margin-right: 2px;
@@ -384,7 +385,7 @@
         }
       }
       .more-body{
-        height: 140px;
+        // height: 140px;
         overflow: hidden;
         .body-list{
           height: 120px;

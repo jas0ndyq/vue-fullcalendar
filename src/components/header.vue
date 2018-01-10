@@ -1,6 +1,7 @@
 <template>
   <div class="full-calendar-header">
     <div class="header-left">
+      <span @click="goDayInMonth()">今天</span>
       <slot name="header-left">
       </slot>
     </div>
@@ -52,6 +53,13 @@
       goNext () {
         this.headDate = this.changeMonth(this.headDate, 1)
         this.dispatchEvent()
+      },
+      goDayInMonth(day) {
+        if (day) {
+          this.headDate = new Date(day)
+          return
+        }
+        this.headDate = new Date()
       },
       changeMonth (date, num) {
         let dt = new Date(date)
