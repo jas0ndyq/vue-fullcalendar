@@ -1294,7 +1294,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.full-calendar-header {\n  display: flex;\n  align-items: center;\n}\n.full-calendar-header .header-left, .full-calendar-header .header-right {\n    flex: 1;\n}\n.full-calendar-header .header-center {\n    flex: 3;\n    text-align: center;\n}\n.full-calendar-header .header-center .title {\n      margin: 0 10px;\n}\n.full-calendar-header .header-center .prev-month, .full-calendar-header .header-center .next-month {\n      cursor: pointer;\n}\n", ""]);
+	exports.push([module.id, "\n.full-calendar-header {\n  display: flex;\n  align-items: center;\n}\n.full-calendar-header .header-left, .full-calendar-header .header-right {\n    flex: 1;\n}\n.full-calendar-header .header-center {\n    flex: 3;\n    text-align: center;\n}\n.full-calendar-header .header-center .title {\n      margin: 0 10px;\n      font-size: 22px;\n}\n.full-calendar-header .header-center .prev-month, .full-calendar-header .header-center .next-month {\n      cursor: pointer;\n}\n", ""]);
 	
 	// exports
 
@@ -1354,10 +1354,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    goDayInMonth: function goDayInMonth(day) {
 	      if (day) {
-	        this.headDate = new Date(day);
+	        this.headDate = this.changeMonth(new Date(day), 0);
+	        this.dispatchEvent();
 	        return;
 	      }
-	      this.headDate = new Date();
+	      this.headDate = this.changeMonth(new Date(), 0);
+	      this.dispatchEvent();
 	    },
 	    changeMonth: function changeMonth(date, num) {
 	      var dt = new Date(date);

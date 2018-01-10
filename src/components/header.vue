@@ -56,10 +56,12 @@
       },
       goDayInMonth(day) {
         if (day) {
-          this.headDate = new Date(day)
+          this.headDate = this.changeMonth(new Date(day), 0)
+          this.dispatchEvent()
           return
         }
-        this.headDate = new Date()
+        this.headDate = this.changeMonth(new Date(), 0)
+        this.dispatchEvent()
       },
       changeMonth (date, num) {
         let dt = new Date(date)
@@ -104,6 +106,7 @@
     text-align:center;
     .title{
       margin: 0 10px;
+      font-size: 22px;
     }
     .prev-month,.next-month{
       cursor: pointer;
