@@ -1166,7 +1166,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _vm.selectThisDay(day, $event)
 	          }
 	        }
-	      }, [_vm._v("\n              + " + _vm._s(day.events[day.events.length - 1].cellIndex - _vm.eventLimit) + " more\n            ")]) : _vm._e()], 2)])
+	      }, [_vm._v("\n              更多\n            ")]) : _vm._e()], 2)])
 	    }))
 	  })), _vm._v(" "), _c('div', {
 	    directives: [{

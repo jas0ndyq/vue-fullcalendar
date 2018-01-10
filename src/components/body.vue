@@ -35,7 +35,7 @@
               </p>
               <p v-if="day.events.length > eventLimit"
                 class="more-link" @click.stop="selectThisDay(day, $event)">
-                + {{day.events[day.events.length -1].cellIndex - eventLimit}} more
+                更多
               </p>
             </div>
           </div>
