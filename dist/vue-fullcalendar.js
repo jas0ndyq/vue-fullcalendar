@@ -584,6 +584,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    emitDayClick: function emitDayClick(day, jsEvent) {
 	      this.$emit('dayClick', day, jsEvent);
 	    },
+	    emitDayDoubleClick: function emitDayDoubleClick(day, jsEvent) {
+	      this.$emit('dayDbClick', day, jsEvent);
+	    },
 	    emitMoreClick: function emitMoreClick(day, events, jsEvent) {
 	      this.$emit('moreClick', day, event, jsEvent);
 	    }
@@ -593,6 +596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    'fc-header': __webpack_require__(15)
 	  }
 	}; //
+	//
 	//
 	//
 	//
@@ -1487,6 +1491,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "eventclick": _vm.emitEventClick,
 	      "dayclick": _vm.emitDayClick,
+	      "dayDbClick": _vm.emitDayDoubleClick,
 	      "moreclick": _vm.emitMoreClick
 	    }
 	  }, [_c('div', {

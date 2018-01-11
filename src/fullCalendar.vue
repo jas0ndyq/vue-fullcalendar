@@ -21,6 +21,7 @@
     <fc-body :current-date="currentDate" :events="events" :month-names="monthNames" 
       :week-names="weekNames" :first-day="firstDay"
       @eventclick="emitEventClick" @dayclick="emitDayClick"
+      @dayDbClick="emitDayDoubleClick"
       @moreclick="emitMoreClick">
       <div slot="body-card">
         <slot name="fc-body-card">
@@ -87,6 +88,9 @@
       },
       emitDayClick (day, jsEvent) {
         this.$emit('dayClick', day, jsEvent)
+      },
+      emitDayDoubleClick (day, jsEvent) {
+        this.$emit('dayDbClick', day, jsEvent)
       },
       emitMoreClick (day, events, jsEvent) {
         this.$emit('moreClick', day, event, jsEvent)
