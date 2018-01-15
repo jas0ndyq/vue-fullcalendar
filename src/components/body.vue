@@ -28,7 +28,10 @@
                  :class="[classNames(event.cssClass), {
                   'is-start'   : isStart(event.start, day.date),
                   'is-end'     : isEnd(event.end,day.date),
-                  'is-opacity' : !event.isShow
+                  'is-opacity' : !event.isShow,
+                  'event-item-level1': event.level && event.level==1,
+                  'event-item-level2': event.level && event.level==2,
+                  'event-item-level3': event.level && event.level==3,
                   }]" 
                 @click="eventClick(event,$event)">
                 {{isBegin(event, day.date, day.weekDay)}}
@@ -349,6 +352,15 @@
               }
               &.is-opacity{
                 opacity: 0;
+              }
+              &.event-item-level1 {
+                background-color:#fda924;
+              }
+              &.event-item-level2 {
+                background-color:#00a65a;
+              }
+              &.event-item-level3 {
+                background-color:#f00;
               }
             }
             .more-link{
