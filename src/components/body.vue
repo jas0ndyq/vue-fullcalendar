@@ -354,13 +354,13 @@
                 opacity: 0;
               }
               &.event-item-level1 {
-                background-color:#fda924;
+                background-color:#55ae49;
               }
               &.event-item-level2 {
-                background-color:#00a65a;
+                background-color:#ff9601;
               }
               &.event-item-level3 {
-                background-color:#f00;
+                background-color:#ff2727;
               }
             }
             .more-link{
